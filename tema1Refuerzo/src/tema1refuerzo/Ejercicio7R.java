@@ -20,8 +20,8 @@ public class Ejercicio7R {
 //Escribir un programa que pregunte al usuario una cantidad a invertir (Co), 
 //la tasa de interés anual(R) y el número de años (n), y muestre por pantalla 
 //el capital final(Cn) obtenido en la inversión.
-        double cant_ini, cant_fin;
-        int int_anual, years;
+        double cant_ini, cant_fin, int_anual;
+        int years;
 
 
         System.out.println("Introduce la cantidad a invertir: ");
@@ -36,7 +36,7 @@ public class Ejercicio7R {
         teclado.close();
 
         // Calcula el capital final con interés compuesto
-        cant_fin = cant_ini * Math.pow(1 + (double)int_anual / 100, years);
+        cant_fin = cant_ini * Math.pow(1 + int_anual / 100, years);
 
         System.out.printf("Capital final obtenido en la inversión: %.2f\n", cant_fin);
 
